@@ -9,12 +9,14 @@ document.querySelectorAll(".card").forEach((card, index) => {
     }, 300 * (index + 1));
 });
 
-<div class="poem">
-    <p>
-        ...
-    </p>
-</div>
+function togglePoem(btn) {
+    const poem = btn.previousElementSibling;
 
-<button class="toggle-btn" onclick="togglePoem(this)">
-    Continue reading ↓
-</button>
+    poem.classList.toggle("open");
+
+    if (poem.classList.contains("open")) {
+        btn.innerHTML = "Show less ↑";
+    } else {
+        btn.innerHTML = "Continue reading ↓";
+    }
+}
