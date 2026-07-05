@@ -51,20 +51,19 @@ footer{
     text-align:center;
     padding:40px;
     color:#999;
-}
 .letter{
     max-height:0;
     overflow:hidden;
     opacity:0;
-    transition:all .6s ease;
+    white-space:pre-line;
+    line-height:1.8;
+    transition:max-height .7s ease, opacity .5s ease;
 }
-
 .letter.show{
-    max-height:1000px;
+    max-height:10000px;
     opacity:1;
     margin-top:15px;
 }
-
 button{
     transition:transform .2s ease, background .3s ease;
 }
