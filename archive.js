@@ -9,14 +9,12 @@ document.querySelectorAll(".card").forEach((card, index) => {
     }, 300 * (index + 1));
 });
 
-function toggleLetter(btn) {
-    const letter = btn.nextElementSibling;
+<div class="poem">
+    <p>
+        ...
+    </p>
+</div>
 
-    letter.classList.toggle("show");
-
-    if (letter.classList.contains("show")) {
-        btn.innerText = "Hide";
-    } else {
-        btn.innerText = "Read More";
-    }
-}
+<button class="toggle-btn" onclick="togglePoem(this)">
+    Continue reading ↓
+</button>
