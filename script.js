@@ -1,19 +1,67 @@
-const noBtn = document.getElementById("no");
-const yesBtn = document.getElementById("yes");
+// Continue Reading
 
-noBtn.addEventListener("mouseover", moveButton);
-noBtn.addEventListener("touchstart", moveButton);
+function togglePoem(button){
 
-function moveButton() {
-  const x = Math.random() * (window.innerWidth - 120);
-  const y = Math.random() * (window.innerHeight - 80);
+    const poem = button.previousElementSibling;
 
-  noBtn.style.position = "fixed";
-  noBtn.style.left = x + "px";
-  noBtn.style.top = y + "px";
+    poem.classList.toggle("open");
+
+    if(poem.classList.contains("open")){
+        button.innerHTML="Hide ❤️";
+    }else{
+        button.innerHTML="Continue Reading ❤️";
+    }
+
 }
 
-yesBtn.addEventListener("click", () => {
-window.location.href = "yes.html";
-});  
-    
+
+// Playlist Player
+
+function playSong(videoId, card){
+
+    // Update YouTube Player
+    document.getElementById("ytplayer").src =
+    "https://www.youtube.com/embed/" +
+    videoId +
+    "?autoplay=1";
+
+    // Remove active class
+    document.querySelectorAll(".song")
+    .forEach(song=>song.classList.remove("active"));
+
+    // Add active class
+    card.classList.add("active");
+
+}
+
+
+// Scroll Animation
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.style.opacity="1";
+            entry.target.style.transform="translateY(0)";
+
+        }
+
+    });
+
+},{
+    threshold:.15
+});
+
+
+document.querySelectorAll(".card,.letter-card,.playlist-card,.player-section")
+.forEach(el=>{
+
+    el.style.opacity="0";
+    el.style.transform="translateY(40px)";
+    el.style.transition=".8s";
+
+    observer.observe(el);
+
+});
