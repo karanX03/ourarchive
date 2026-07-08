@@ -18,41 +18,19 @@
 
 <body>
 
-<div class="bg-blur blur1"></div>
-<div class="bg-blur blur2"></div>
-
 <header class="hero">
-
-<div class="hero-content">
 
 <h1>Our Archive ❤️</h1>
 
 <p>
 Every memory deserves a forever home.
-Some stories are written with words...
-Ours is written with feelings.
 </p>
-
-<a href="#extracts" class="scroll-btn">
-Explore Memories ↓
-</a>
-
-</div>
 
 </header>
 
-
-<section class="section" id="extracts">
-
-<div class="section-title">
+<section class="section">
 
 <h2>Written Extracts</h2>
-
-<p>
-Pieces of my heart that slowly turned into words.
-</p>
-
-</div>
 
 <div class="card">
 
@@ -61,7 +39,6 @@ Pieces of my heart that slowly turned into words.
 <div class="poem">
 
 <p>
-
 You asked me once,
 
 "Why do you like me?"
@@ -72,13 +49,9 @@ not because I had no answer,
 
 but because my answer had no words.
 
-
-
 You are not a reason I can explain,
 
 you are a feeling I can't escape.
-
-
 
 It's strange...
 
@@ -90,8 +63,6 @@ not empty,
 
 but peaceful.
 
-
-
 With you,
 
 I don't try to be better,
@@ -101,8 +72,6 @@ I don't try to be different,
 I don't try at all...
 
 and still, I feel enough.
-
-
 
 There's something about you
 
@@ -114,8 +83,6 @@ invisible...
 
 yet impossible to ignore.
 
-
-
 I didn't choose you with logic,
 
 I didn't fall for a reason.
@@ -126,191 +93,89 @@ slowly became yours,
 
 without even realizing when.
 
-
-
 So if you ask me again
 
 what I saw in you...
 
-
-
 I'll still smile and say...
-
-
 
 I never saw anything.
 
-
-
 I just felt everything.
-
 </p>
 
 </div>
 
-<button class="toggle-btn" onclick="togglePoem(this)">
+<button class="toggle-btn"
+onclick="togglePoem(this)">
 Continue Reading ❤️
 </button>
 
 </div>
 
 </section>
-
-
-
-<section class="section">
-
-<div class="section-title">
+        <section class="section">
 
 <h2>Letters</h2>
 
+<div class="card">
+
 <p>
-Every letter here is a moment I never wanted to forget.
-</p>
-
-</div>
-
-<div class="letter-card">
-
-<div class="letter-icon">
-
-💌
-
-</div>
-
-<h3>
-
 Coming Soon...
-
-</h3>
-
-<p>
-
-One day this place will be filled with letters,
-memories,
-and little moments that belong only to us.
-
 </p>
 
 </div>
 
 </section>
 
-
-
 <section class="playlist-section">
-
-<div class="playlist-heading">
 
 <h2>Our Playlist 🎵</h2>
 
-<p>
+<div class="playlist-card">
 
-Some feelings are easier to hear in songs than to say in words.
+<div class="song" onclick="playSong('qN88U6ZqR-4')">
+<span>🌙 Khamoshiyan</span>
+</div>
 
-</p>
+<div class="song" onclick="playSong('Umqb9KENgmk')">
+<span>❤️ Tum Hi Ho</span>
+</div>
+
+<div class="song" onclick="playSong('2ltGXfmI6mk')">
+<span>😊 Muskurane Ki Wajah</span>
+</div>
+
+<div class="song" onclick="playSong('_iktURk0X-A')">
+<span>💖 Phir Bhi Tumko Chaahunga</span>
+</div>
+
+<div class="song" onclick="playSong('cUmUOb7j3dc')">
+<span>✨ Dhun</span>
+</div>
 
 </div>
 
-<div class="playlist-card">
+<div class="player">
 
-<h3>
+<iframe
+id="ytplayer"
+width="100%"
+height="230"
+src="https://www.youtube.com/embed/qN88U6ZqR-4"
+title="YouTube Player"
+frameborder="0"
+allow="autoplay; encrypted-media"
+allowfullscreen>
+</iframe>
 
-Songs that remind me of you ❤️
-
-</h3>
-        <!-- Song 1 -->
-        <div class="song" onclick="playSong('qN88U6ZqR-4', this)">
-            <div class="song-left">
-                <div class="cover">🌙</div>
-                <div class="song-info">
-                    <h4>Khamoshiyan</h4>
-                    <p>Arijit Singh</p>
-                </div>
-            </div>
-            <button class="play-btn">▶ Play</button>
-        </div>
-
-        <!-- Song 2 -->
-        <div class="song" onclick="playSong('Umqb9KENgmk', this)">
-            <div class="song-left">
-                <div class="cover">❤️</div>
-                <div class="song-info">
-                    <h4>Tum Hi Ho</h4>
-                    <p>Arijit Singh</p>
-                </div>
-            </div>
-            <button class="play-btn">▶ Play</button>
-        </div>
-
-        <!-- Song 3 -->
-        <div class="song" onclick="playSong('2ltGXfmI6mk', this)">
-            <div class="song-left">
-                <div class="cover">😊</div>
-                <div class="song-info">
-                    <h4>Muskurane Ki Wajah</h4>
-                    <p>Arijit Singh</p>
-                </div>
-            </div>
-            <button class="play-btn">▶ Play</button>
-        </div>
-
-        <!-- Song 4 -->
-        <div class="song" onclick="playSong('_iktURk0X-A', this)">
-            <div class="song-left">
-                <div class="cover">💖</div>
-                <div class="song-info">
-                    <h4>Phir Bhi Tumko Chaahunga</h4>
-                    <p>Arijit Singh</p>
-                </div>
-            </div>
-            <button class="play-btn">▶ Play</button>
-        </div>
-
-        <!-- Song 5 -->
-        <div class="song" onclick="playSong('cUmUOb7j3dc', this)">
-            <div class="song-left">
-                <div class="cover">✨</div>
-                <div class="song-info">
-                    <h4>Dhun</h4>
-                    <p>Arijit Singh</p>
-                </div>
-            </div>
-            <button class="play-btn">▶ Play</button>
-        </div>
-
-    </div>
-
-    <div class="player-section">
-
-        <h3>🎬 Now Playing</h3>
-
-        <div class="player-box">
-
-            <iframe
-                id="ytplayer"
-                width="100%"
-                height="220"
-                src="https://www.youtube.com/embed/qN88U6ZqR-4"
-                title="YouTube video player"
-                frameborder="0"
-                allow="autoplay; encrypted-media; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 <footer>
 
-<p>Made with ❤️ by Karan</p>
-
-<p class="footer-line">
-Every song here carries a memory, and every memory somehow leads me back to you.
-</p>
+Made with ❤️ by Karan
 
 </footer>
 
