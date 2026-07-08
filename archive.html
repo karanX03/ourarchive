@@ -1,175 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Archive</title>
+
+<title>Our Archive ❤️</title>
+
 <link rel="stylesheet" href="archive.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+<div class="bg-blur blur1"></div>
+<div class="bg-blur blur2"></div>
+
 <header class="hero">
-    <h1>Our Archive</h1>
-    <p>Every memory deserves a forever home.</p>
+
+<div class="hero-content">
+
+<h1>Our Archive ❤️</h1>
+
+<p>
+Every memory deserves a forever home.
+Some stories are written with words...
+Ours is written with feelings.
+</p>
+
+<a href="#extracts" class="scroll-btn">
+Explore Memories ↓
+</a>
+
+</div>
+
 </header>
 
-<section class="section">
-    <h2>Written Extracts</h2>
 
-    <div class="card">
-        <h3>Reason why I like you, ?</h3>
+<section class="section" id="extracts">
+
+<div class="section-title">
+
+<h2>Written Extracts</h2>
+
+<p>
+Pieces of my heart that slowly turned into words.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Reason why I like you?</h3>
+
 <div class="poem">
-    <p>
+
+<p>
+
 You asked me once,
+
 "Why do you like me?"
+
 And I stood there silent...
 
 not because I had no answer,
+
 but because my answer had no words.
 
+
+
 You are not a reason I can explain,
+
 you are a feeling I can't escape.
 
+
+
 It's strange...
+
 how in a world so loud,
+
 your presence feels like silence—
+
 not empty,
+
 but peaceful.
 
+
+
 With you,
+
 I don't try to be better,
+
 I don't try to be different,
+
 I don't try at all...
+
 and still, I feel enough.
 
+
+
 There's something about you
+
 I can't name—
+
 like a fragrance in the air,
+
 invisible...
+
 yet impossible to ignore.
 
+
+
 I didn't choose you with logic,
+
 I didn't fall for a reason.
-I just... slowly became yours,
+
+I just...
+
+slowly became yours,
+
 without even realizing when.
 
+
+
 So if you ask me again
+
 what I saw in you...
 
-I'll still smile and say—
+
+
+I'll still smile and say...
+
+
 
 I never saw anything.
 
+
+
 I just felt everything.
-    </p>
+
+</p>
+
 </div>
 
 <button class="toggle-btn" onclick="togglePoem(this)">
-    Continue reading ↓
+Continue Reading ❤️
 </button>
 
-    </div>
+</div>
 
 </section>
+
+
 
 <section class="section">
-    <h2>Letters</h2>
-    <div class="card">
-        <p>Coming Soon...</p>
-    </div>
+
+<div class="section-title">
+
+<h2>Letters</h2>
+
+<p>
+Every letter here is a moment I never wanted to forget.
+</p>
+
+</div>
+
+<div class="letter-card">
+
+<div class="letter-icon">
+
+💌
+
+</div>
+
+<h3>
+
+Coming Soon...
+
+</h3>
+
+<p>
+
+One day this place will be filled with letters,
+memories,
+and little moments that belong only to us.
+
+</p>
+
+</div>
+
 </section>
-<!-- Playlist -->
+
+
+
 <section class="playlist-section">
 
-    <div class="playlist-heading">
-        <h2>Playlist</h2>
-        <p>Songs that speak what my heart feels for you.</p>
-        <span>I hope these songs make you smile whenever you listen to them... ❤️</span>
-    </div>
+<div class="playlist-heading">
 
-    <div class="playlist-card">
+<h2>Our Playlist 🎵</h2>
 
-        <div class="playlist-title">
-            <span class="music-icon">🎵</span>
-            <div>
-                <h3>Our Playlist</h3>
-                <p>Click any song to listen on YouTube</p>
+<p>
+
+Some feelings are easier to hear in songs than to say in words.
+
+</p>
+
+</div>
+
+<div class="playlist-card">
+
+<h3>
+
+Songs that remind me of you ❤️
+
+</h3>
+        <!-- Song 1 -->
+        <div class="song" onclick="playSong('qN88U6ZqR-4', this)">
+            <div class="song-left">
+                <div class="cover">🌙</div>
+                <div class="song-info">
+                    <h4>Khamoshiyan</h4>
+                    <p>Arijit Singh</p>
+                </div>
             </div>
+            <button class="play-btn">▶ Play</button>
         </div>
 
-        <!-- Song 1 -->
-        <a href="YOUTUBE_LINK_1" target="_blank" class="song">
-            <span class="number">01</span>
-
-            <img src="images/khamoshiyan.jpg" alt="">
-
-            <div class="song-info">
-                <h4>Khamoshiyan</h4>
-                <p>Arijit Singh</p>
-            </div>
-
-            <button>▶ Listen</button>
-        </a>
-
         <!-- Song 2 -->
-        <a href="YOUTUBE_LINK_2" target="_blank" class="song">
-            <span class="number">02</span>
-
-            <img src="images/tumhiho.jpg" alt="">
-
-            <div class="song-info">
-                <h4>Tum Hi Ho</h4>
-                <p>Arijit Singh</p>
+        <div class="song" onclick="playSong('Umqb9KENgmk', this)">
+            <div class="song-left">
+                <div class="cover">❤️</div>
+                <div class="song-info">
+                    <h4>Tum Hi Ho</h4>
+                    <p>Arijit Singh</p>
+                </div>
             </div>
-
-            <button>▶ Listen</button>
-        </a>
+            <button class="play-btn">▶ Play</button>
+        </div>
 
         <!-- Song 3 -->
-        <a href="YOUTUBE_LINK_3" target="_blank" class="song">
-            <span class="number">03</span>
-
-            <img src="images/tuhaitohmainhoon.jpg" alt="">
-
-            <div class="song-info">
-                <h4>Tu Hai Toh Main Hoon</h4>
-                <p>Arijit Singh</p>
+        <div class="song" onclick="playSong('2ltGXfmI6mk', this)">
+            <div class="song-left">
+                <div class="cover">😊</div>
+                <div class="song-info">
+                    <h4>Muskurane Ki Wajah</h4>
+                    <p>Arijit Singh</p>
+                </div>
             </div>
-
-            <button>▶ Listen</button>
-        </a>
+            <button class="play-btn">▶ Play</button>
+        </div>
 
         <!-- Song 4 -->
-        <a href="YOUTUBE_LINK_4" target="_blank" class="song">
-            <span class="number">04</span>
-
-            <img src="images/haanhasi.jpg" alt="">
-
-            <div class="song-info">
-                <h4>Haan Hasi Ban Gaye</h4>
-                <p>Arijit Singh</p>
+        <div class="song" onclick="playSong('_iktURk0X-A', this)">
+            <div class="song-left">
+                <div class="cover">💖</div>
+                <div class="song-info">
+                    <h4>Phir Bhi Tumko Chaahunga</h4>
+                    <p>Arijit Singh</p>
+                </div>
             </div>
-
-            <button>▶ Listen</button>
-        </a>
+            <button class="play-btn">▶ Play</button>
+        </div>
 
         <!-- Song 5 -->
-        <a href="YOUTUBE_LINK_5" target="_blank" class="song">
-            <span class="number">05</span>
-
-            <img src="images/gehraishq.jpg" alt="">
-
-            <div class="song-info">
-                <h4>Gehra Ishq</h4>
-                <p>Arijit Singh</p>
+        <div class="song" onclick="playSong('cUmUOb7j3dc', this)">
+            <div class="song-left">
+                <div class="cover">✨</div>
+                <div class="song-info">
+                    <h4>Dhun</h4>
+                    <p>Arijit Singh</p>
+                </div>
             </div>
+            <button class="play-btn">▶ Play</button>
+        </div>
 
-            <button>▶ Listen</button>
-        </a>
+    </div>
 
-        <div class="playlist-footer">
-            ❤️ Every song here is a piece of how I feel about you.
+    <div class="player-section">
+
+        <h3>🎬 Now Playing</h3>
+
+        <div class="player-box">
+
+            <iframe
+                id="ytplayer"
+                width="100%"
+                height="220"
+                src="https://www.youtube.com/embed/qN88U6ZqR-4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
         </div>
 
     </div>
@@ -177,7 +305,13 @@ I just felt everything.
 </section>
 
 <footer>
-Made with ❤️ by Karan
+
+<p>Made with ❤️ by Karan</p>
+
+<p class="footer-line">
+Every song here carries a memory, and every memory somehow leads me back to you.
+</p>
+
 </footer>
 
 <script src="archive.js"></script>
