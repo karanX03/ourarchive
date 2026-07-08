@@ -1,22 +1,63 @@
-document.querySelectorAll(".card").forEach((card, index) => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(40px)";
+// =======================
+// Read More / Hide
+// =======================
 
-    setTimeout(() => {
-        card.style.transition = "all .8s ease";
-        card.style.opacity = "1";
-        card.style.transform = "translateY(0)";
-    }, 300 * (index + 1));
-});
+function togglePoem(button){
 
-function togglePoem(btn) {
-    const poem = btn.previousElementSibling;
+    const poem = button.previousElementSibling;
 
     poem.classList.toggle("open");
 
-    if (poem.classList.contains("open")) {
-        btn.innerHTML = "Show less ↑";
-    } else {
-        btn.innerHTML = "Continue reading ↓";
+    if(poem.classList.contains("open")){
+        button.innerHTML = "Hide ❤️";
+    }else{
+        button.innerHTML = "Continue Reading ❤️";
     }
+
 }
+
+// =======================
+// Playlist
+// =======================
+
+function playSong(videoId){
+
+    document.getElementById("ytplayer").src =
+    "https://www.youtube.com/embed/" +
+    videoId +
+    "?autoplay=1";
+
+}
+
+// =======================
+// Scroll Animation
+// =======================
+
+const cards = document.querySelectorAll(".card,.playlist-card");
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.style.opacity="1";
+            entry.target.style.transform="translateY(0)";
+
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+cards.forEach(card=>{
+
+    card.style.opacity="0";
+    card.style.transform="translateY(40px)";
+    card.style.transition=".7s ease";
+
+    observer.observe(card);
+
+});
