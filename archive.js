@@ -20,12 +20,13 @@ function togglePoem(button){
 // Playlist
 // =======================
 
-function playSong(videoId){
+function playSong(videoId, title, artist){
 
     document.getElementById("ytplayer").src =
-    "https://www.youtube.com/embed/" +
-    videoId +
-    "?autoplay=1";
+    "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+
+    document.getElementById("songTitle").innerText = title;
+    document.getElementById("artistName").innerText = artist;
 
 }
 
