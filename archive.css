@@ -165,7 +165,32 @@ box-shadow:0 15px 40px rgba(0,0,0,.35);
 .play-btn:hover{
     transform:scale(1.1);
 }
+.now-playing{
+    margin-top:25px;
+    margin-bottom:25px;
+    background:#1b1b22;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:18px 20px;
+}
 
+.now-playing span{
+    color:#ff4f95;
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.now-playing h3{
+    margin:8px 0 4px;
+    font-size:26px;
+    color:#fff;
+}
+
+.now-playing p{
+    color:#aaa;
+    font-size:15px;
+}
 .player{
 margin-top:30px;
 border-radius:20px;
