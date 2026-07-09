@@ -75,7 +75,7 @@ background:linear-gradient(to bottom,transparent,#1b1b22);
 
 .poem.open::after{
 display:none;
-
+}
   .poem p{
     margin:0;
     white-space:normal;
