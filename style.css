@@ -579,3 +579,117 @@ button,
 .heart{
 transition:all .35s ease;
 }
+/* ===================================
+   YES PAGE
+=================================== */
+
+.container{
+
+    width:100%;
+    max-width:650px;
+
+    padding:60px 40px;
+
+    border-radius:38px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.40);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    box-shadow:
+    0 35px 80px rgba(0,0,0,.10),
+    0 10px 30px rgba(255,170,200,.18);
+
+    animation:cardFade 1s ease;
+
+}
+
+.container h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:64px;
+
+    line-height:1.15;
+
+    color:#ff4f8d;
+
+    margin-bottom:30px;
+
+}
+
+.subtitle{
+
+    font-size:20px;
+
+    color:#555;
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+
+}
+
+.container button{
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:999px;
+
+    padding:20px 45px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#ff6ba3,#ff4f95);
+
+    box-shadow:
+    0 15px 35px rgba(255,90,150,.30);
+
+    transition:.35s;
+
+}
+
+.container button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 25px 45px rgba(255,90,150,.40);
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+padding:40px 25px;
+
+}
+
+.container h1{
+
+font-size:48px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+}
