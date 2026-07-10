@@ -343,3 +343,43 @@ body::before{
 footer{
     color:#777;
 }
+/* ===== Premium Entrance ===== */
+
+.card,
+.playlist-card,
+.now-playing,
+.player{
+    opacity:0;
+    transform:translateY(45px);
+    animation:fadeUp .9s ease forwards;
+}
+
+.card{
+    animation-delay:.2s;
+}
+
+.playlist-card{
+    animation-delay:.45s;
+}
+
+.now-playing{
+    animation-delay:.65s;
+}
+
+.player{
+    animation-delay:.85s;
+}
+
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(45px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
