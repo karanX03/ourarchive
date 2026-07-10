@@ -715,3 +715,40 @@ color:#555;
 margin:25px 0 35px;
 text-align:center;
 }
+/* ===== YES PAGE ===== */
+
+.subtitle{
+    font-size:18px;
+    line-height:1.9;
+    color:#6c6c6c;
+    margin-top:25px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.subtitle span{
+    color:#ff4f95;
+    font-weight:600;
+}
+
+.message{
+    font-size:20px;
+    color:#555;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+body{
+    animation:fadePage .8s ease;
+}
+
+@keyframes fadePage{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
