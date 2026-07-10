@@ -752,3 +752,26 @@ body{
         transform:translateY(0);
     }
 }
+/* ===== Birthday Intro ===== */
+
+.birthday-message{
+    margin-bottom:24px;
+}
+
+.birthday-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:52px;
+    font-weight:700;
+    color:#444;
+    margin-bottom:12px;
+    letter-spacing:.5px;
+}
+
+.birthday-text{
+    font-size:18px;
+    line-height:1.8;
+    color:#777;
+    max-width:300px;
+    margin:0 auto;
+    margin-bottom:8px;
+}
